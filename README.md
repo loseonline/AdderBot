@@ -1,0 +1,2 @@
+# AdderBot
+Üye ekleme botu
