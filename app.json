@@ -26,7 +26,7 @@
            "plan": "heroku-postgresql"
         }
      ],
-    "repository": "https://github.com/usermusti",
+    "repository": "https://github.com/usermusti/AdderBot",
     "env": {
       "APP_ID": {
         "description": "my.telegram.org.",
