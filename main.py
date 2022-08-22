@@ -311,9 +311,7 @@ async def to(lel, message):
             async for x in client.iter_participants(From, aggressive=True):
                try:
                   ra+=1
-                  if ra
-   
-    150:
+                  if ra<a:150:
                      await client.disconnect()
                      r+=f"**\n❤️ By @{OWNER_USERNAME}**"
                      await app.send_message(chat_id=message.chat.id, text=f"{r}")
