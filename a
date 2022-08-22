@@ -1,0 +1,72 @@
+{
+    "name": "LoseAdderBot",
+    "description": "Telegram'daüye çekmek için kullanışlı bot.",
+    "logo": "",
+    "keywords": [
+      "telegram",
+      "bot",
+      "python",
+      "pyrogram",
+      "scrapper"
+    ],
+      "buildpacks": [{
+      "url": "heroku/python"
+    }],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "addons": [
+        {
+           "options": {
+              "version": "12"
+           },
+           "plan": "heroku-postgresql"
+        }
+     ],
+    "repository": "https://github.com/usermusti/AdderBot",
+    "env": {
+      "APP_ID": {
+        "description": "my.telegram.org.",
+        "required": true,
+        "value": ""
+      },
+      "API_HASH": {
+        "description": "my.telegram.org.",
+        "required": true,
+        "value": ""
+      },
+      "BOT_TOKEN": {
+        "description": "@BotFather",
+        "required": true,
+        "value": ""
+      },
+      "UPDATES_CHANNEL": {
+        "description": "Güncelleme kanalı kullanıcı adı.",
+        "required": true,
+        "value": ""
+      },
+      "OWNER": {
+        "description": " Sahip ID.",
+        "required": true,
+        "value": ""
+      },
+      "PREMIUM": {
+        "description": "Premium kullanıcı ID",
+        "required": true,
+        "value": ""
+      },
+      "OWNER_USERNAME": {
+        "description": "Sahip Hesap Kullanıcı Adı - '@' olmadan! ",
+        "required": true,
+        "value": ""
+      },
+      "LOG_CHANNEL": {
+        "description": "Log kanalı ID",
+        "required": true,
+        "value": ""
+      }
+    }
+  }
