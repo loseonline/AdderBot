@@ -34,8 +34,8 @@ import re, os, random, asyncio, html,configparser,pyrogram, subprocess, r
  API_HASH = os.environ.get("API_HASH") 
  BOT_TOKEN = os.environ.get("BOT_TOKEN") 
  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL") 
- OWNER= [1610383727] 
- PREMIUM = [1610383727] 
+ OWNER= [1193186807] 
+ PREMIUM = [1193186807] 
  OWNER_USERNAME = os.environ.get("OWNER_USERNAME") 
  LOG_CHANNEL = os.environ.get("LOG_CHANNEL") 
   
@@ -105,7 +105,7 @@ import re, os, random, asyncio, html,configparser,pyrogram, subprocess, r
     id = message.from_user.id 
     user_name = '@' + message.from_user.username if message.from_user.username else None 
     await add_user(id, user_name) 
-    but = InlineKeyboardMarkup([[InlineKeyboardButton("Giriş✅", callback_data="Login"), InlineKeyboardButton("Üye ekleme💯", callback_data="Adding") ],[InlineKeyboardButton("Numara⚙️", callback_data="Edit"), InlineKeyboardButton("PhoneSee💕", callback_data="Ish")],[InlineKeyboardButton("Numara kaldır⚙️", callback_data="Remove"), InlineKeyboardButton("Admin Pannel", callback_data="Admin")]]) 
+    but = InlineKeyboardMarkup([[InlineKeyboardButton("Giriş Başarılı✅", callback_data="Login"), InlineKeyboardButton("Üye ekleme💯", callback_data="Adding") ],[InlineKeyboardButton("Numara⚙️", callback_data="Edit"), InlineKeyboardButton("PhoneSee💕", callback_data="Ish")],[InlineKeyboardButton("Numara kaldır⚙️", callback_data="Remove"), InlineKeyboardButton("Admin Pannel", callback_data="Admin")]]) 
     await message.reply_text(f"**Selam** `{message.from_user.first_name}` **!\n\nBen üye ekleme botuyum \n\nBy @{OWNER_USERNAME}**", reply_markup=but) 
   
   
@@ -547,10 +547,10 @@ import re, os, random, asyncio, html,configparser,pyrogram, subprocess, r
   
  text = """ 
  ╔════╗ㅤMembers  
- ╚═╗╔═╝ Scraping Bot 
+ ╚═╗╔═╝ LoseAdderBot 
  ╔═╣╠═╗ 
  ║╔╣╠╗║ㅤInduced 
- ║╚╣╠╝║ Scraper Bot 
+ ║╚╣╠╝║ LoseAdderBot
  ╚═╣╠═╝ 
  ╔═╝╚═╗  
  ╚════╝  
