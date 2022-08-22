@@ -9,4 +9,3 @@ sqlalchemy~=1.3.23
 psycopg2-binary
 feedparser
 tglogging
-encodings
